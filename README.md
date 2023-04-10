@@ -113,6 +113,7 @@ await fastify.ready()
  | uiConfig             | {}               | Configuration options for [Swagger UI](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md).                                                                                                   |
  | uiHooks              | {}               | Additional hooks for the documentation's routes. You can provide the `onRequest` and `preHandler` hooks with the same [route's options](https://www.fastify.io/docs/latest/Reference/Routes/#routes-options) interface.|
  | theme                | {}               | Add custom JavaScript and CSS to the Swagger UI web page |
+ | staticDir            | undefined        | Overwrite the directory to lookup the Swagger UI static assets |
  | logLevel             | info             | Allow to define route log level.                                                                                          |
 
 The plugin will expose the documentation with the following APIs:
